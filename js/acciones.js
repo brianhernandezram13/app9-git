@@ -51,14 +51,14 @@ function watchPosition(){
 	var watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 	function onSuccess(position){
 		
-		$('#latitud').html(position.coords.latitude);
+		$('#latitude').html(position.coords.latitude);
 		$('#longitud').html(position.coords.longitude);
 		$('#altitud').html(position.coords.altitude);
 		$('#accuracy').html(position.coords.accuracy);
 		$('#aaccuracy').html(position.coords.altitudeAccuracy);
 		$('#headingg').html(position.coords.heading);
 		$('#speed').html(position.coords.speed);
-		$('#timestamp').html(position.coords.timestamp);
+		$('#timestamp').html(position.timestamp);
 	};
 	
 	function onError(error){
