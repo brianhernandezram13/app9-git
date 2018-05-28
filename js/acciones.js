@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-    document.addEventListener("deviceready",onDeviceReady, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
 	
 });
 
@@ -51,7 +51,7 @@ function watchPosition(){
 	var watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
 	function onSuccess(position){
 		
-		$('#latitude').html(position.coords.latitude);
+		$('#latitud').html(position.coords.latitude);
 		$('#longitud').html(position.coords.longitude);
 		$('#altitud').html(position.coords.altitude);
 		$('#accuracy').html(position.coords.accuracy);
